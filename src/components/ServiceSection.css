@@ -1,0 +1,149 @@
+/* container background & padding */
+.service-section {
+  padding: 4rem;
+  background: url('../assets/bg-pattern.jpg') center/cover no-repeat;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1500px;
+  border-radius: 50px;
+}
+
+/* header: title + description, spaced apart */
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+}
+.service-header h2 {
+  font-size: 3rem;    
+  font-weight: 700;
+}
+.service-header h2 span {
+  color: #ff8c42;
+}
+.service-header p {
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  color: #ccc;
+}
+
+/* grid: two cards side by side, fixed 460px width */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2rem 3rem;
+  max-width: 1400px;
+}
+
+/* wrapper allows overflow for the CTA button */
+.card-wrapper {
+  position: relative;
+  width: 100%;    
+  overflow: visible;
+  padding: 0.5rem;
+}
+
+/* the card itself with cut-corner via clip-path */
+.card {
+ padding: 1rem;
+  min-height: 400px;   
+  /* cut top-right corner: */
+  /* clip-path: polygon(
+    0 0,
+    calc(100% - 56px) 0,
+    100% 56px,
+    100% 100%,
+    0 100%
+  ); */
+ 
+  height: 100%;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);   /* ← slight grow */
+  z-index: 5;               /* ← lift above neighbors */
+}
+
+/* optional behind-the-cut SVG decoration */
+.card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 3;
+  width: 600px;
+  height: 600px;
+  
+  background: url('../assets/ns-card-bg.svg') no-repeat bottom right;
+  background-size: 600px 600px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* content sits above SVG & clip */
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 3.5rem 6rem 3rem;
+}
+.card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+}
+
+/* bump up the title too */
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+.card hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 0.5rem 0 1rem;
+}
+.card ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  line-height: 2.0;
+  color: #ddd;
+}
+
+/* floating arrow CTA */
+.card-cta {
+  position: absolute;
+  bottom: 80px;
+  right: 130px;
+  width: 80px;
+  height: 80px;
+  background-color: #1D2939;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .card-cta {
+  background-color: #FD6F00;
+}
+
+.card-cta img {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);                /* white on dark */
+  transition: filter 0.3s ease;
+}
+.card:hover .card-cta img {
+  /* this filter combination yields an orange tone */
+  filter: invert(35%) sepia(100%) saturate(5000%) hue-rotate(10deg)
+          brightness(100%) contrast(102%);
+}

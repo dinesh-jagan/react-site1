@@ -1,0 +1,29 @@
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0d; /* Dark background */
+    color: #fff; /* White text */
+    scroll-margin-top: 80px; /* Prevent overlap by navbar */
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-container {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffa500; /* Accent color (e.g. orange) */
+  }
+  
+  .section-content {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #ccc;
+  }
+  
