@@ -105,7 +105,6 @@
     font-size: 20px;
     color: #FD853A;
   }
-  
   .footer-newsletter input {
     padding: 8px;
     border: none;
@@ -117,12 +116,12 @@
     font-size: 16px;
     font-family: 'Poppins-Regular', sans-serif;
   }
-  
+
   .newsletter-input {
     display: flex;
     margin-top: 10px;
   }
-  
+
   .newsletter-input button {
     padding: 8px 12px;
     border: none;
@@ -132,7 +131,7 @@
     cursor: pointer;
     width: 46px;
   }
-  
+
   .footer-nav-link {
     background: none;
     border: none;
@@ -142,4 +141,60 @@
     cursor: pointer;
     text-align: left;
     padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    height: auto;
+    padding: 3rem 2rem;
   }
+  .contact-title {
+    font-size: 36px;
+    margin-bottom: 2.5rem;
+  }
+
+  .cta-header {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 0;
+    padding-top: 0;
+
+
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+  .contact-cta {
+    text-align: left;
+  }
+
+  .timeline-column {
+    position: static;
+  }
+
+  .text-block {
+    position: static !important;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .text-block h3 {
+    font-size: 28px;
+  }
+
+  .text-block p {
+    font-size: 18px;
+  }
+
+  .right-column .text-block {
+    padding-left: 1rem;
+  }
+
+  .timeline-center {
+    display: none;
+  }
+
+  .text-block {
+    padding-top: 10px;
+  }
+}

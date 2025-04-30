@@ -64,7 +64,7 @@ function App() {
       />
 
       {/* About Section — Visible First */}
-      <div ref={aboutRef} style={{ height: '100vh', padding: '2rem' }}>
+      <div ref={aboutRef} style={{ minHeight: '100vh', padding: '2rem' }}>
         <AboutSection />
       </div>
 
@@ -74,12 +74,12 @@ function App() {
       </div>
 
       {/* Placeholder Project Section */}
-      <div ref={projectRef} style={{ height: '100vh', padding: '2rem' }}>
+      <div ref={projectRef} style={{ height: '100vh' }}>
         <ProjectSection/>
       </div>
 
       {/* Custom Contact */}
-      <div ref={contactRef} style={{ height: '100vh'}}>
+      <div ref={contactRef} style={{}}>
       <ContactSection
         sections={['about', 'service', 'project', 'contact']}
         activeSection={activeSection}
