@@ -1,4 +1,10 @@
-/* container background & padding */
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 .service-section {
   padding: 4rem;
   background: url('../assets/bg-pattern.jpg') center/cover no-repeat;
@@ -8,7 +14,6 @@
   border-radius: 50px;
 }
 
-/* header: title + description, spaced apart */
 .service-header {
   display: flex;
   justify-content: space-between;
@@ -16,7 +21,7 @@
   max-width: 1400px;
 }
 .service-header h2 {
-  font-size: 3rem;    
+  font-size: 64px;    
   font-weight: 700;
 }
 .service-header h2 span {
@@ -25,11 +30,11 @@
 .service-header p {
   max-width: 500px;
   line-height: 1.6;
-  font-size: 1.125rem;
-  color: #ccc;
+  font-size: 20px;
+  color: white;
+  padding-right: 45px;
 }
 
-/* grid: two cards side by side, fixed 460px width */
 .service-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -38,7 +43,6 @@
   max-width: 1400px;
 }
 
-/* wrapper allows overflow for the CTA button */
 .card-wrapper {
   position: relative;
   width: 100%;    
@@ -46,30 +50,20 @@
   padding: 0.5rem;
 }
 
-/* the card itself with cut-corner via clip-path */
 .card {
  padding: 1rem;
-  min-height: 400px;   
-  /* cut top-right corner: */
-  /* clip-path: polygon(
-    0 0,
-    calc(100% - 56px) 0,
-    100% 56px,
-    100% 100%,
-    0 100%
-  ); */
- 
+  min-height: 400px;    
   height: 100%;
   border-radius: 16px;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.03);   /* ← slight grow */
-  z-index: 5;               /* ← lift above neighbors */
+  transform: scale(1.03); 
+  z-index: 5;              
 }
 
-/* optional behind-the-cut SVG decoration */
+
 .card::before {
   content: '';
   position: absolute;
@@ -84,7 +78,7 @@
   opacity: 0.8;
 }
 
-/* content sits above SVG & clip */
+
 .card-content {
   position: relative;
   z-index: 2;
@@ -96,8 +90,10 @@
   margin-bottom: 1.5rem;
 }
 
-/* bump up the title too */
+
 .card h3 {
+  font-family: 'Poppins-Medium', sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -114,7 +110,6 @@
   color: #ddd;
 }
 
-/* floating arrow CTA */
 .card-cta {
   position: absolute;
   bottom: 80px;
@@ -143,7 +138,90 @@
   transition: filter 0.3s ease;
 }
 .card:hover .card-cta img {
-  /* this filter combination yields an orange tone */
   filter: invert(35%) sepia(100%) saturate(5000%) hue-rotate(10deg)
           brightness(100%) contrast(102%);
+}
+
+@media screen and (max-width: 768px) {
+  .service-section {
+    padding: 2rem;
+    border-radius: 20px;
+  }
+
+  .service-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .service-header h2 {
+    font-size: 2rem;
+  }
+
+  .service-header p {
+    font-size: 1rem;
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    min-height: auto;
+    --bg-size: 350px;
+    position: relative;
+    --bg-height: 400px; 
+    --cta-bottom: 116px;
+    --cta-right: 67px;
+  }
+
+  .card-content {
+    padding: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+  }
+
+  .card ul {
+    font-size: 0.95rem;
+    padding-left: 1rem;
+  }
+
+  .card-cta {
+    width: 60px;
+    height: 60px;
+    bottom: var(--cta-bottom);
+  right:  var(--cta-right);
+  }
+
+  .card-cta img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    bottom: 74px;
+    right: 0;
+    width: 100%;
+    height: var(--bg-height);      
+    background: url('../assets/ns-card-bg.svg') no-repeat bottom right;
+    background-size: auto 100%;
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  
 }

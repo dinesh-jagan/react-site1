@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 1455px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 10rem 1rem;
     box-sizing: border-box;
   }
   
@@ -23,20 +23,20 @@
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
     text-align: center;
-    color: #374151; /* dark gray */
+    color: #374151;
     margin-bottom: 4.5rem;
     line-height: 1.2;
   }
   
   .timeline-title .highlight {
-    color: #F97316; /* orange highlight for "Work Experience" */
+    color: #F97316; 
   }
   
   .timeline-content {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    align-items: stretch; /* ensure columns stretch to container height */
-    gap: 2rem 1.5rem;    /* horizontal gap between columns, vertical not needed */
+    align-items: stretch;
+    gap: 2rem 1.5rem;    
   }
   
   .timeline-column {
@@ -67,10 +67,10 @@
     font-size: 24px;
     margin: 0;
     line-height: 1.5;
-    color: #6B7280; /* gray text */
+    color: #6B7280; 
   }
   
-  /* Position text blocks to match timeline dots */
+ 
   .left-column .text-block.top {
     position: absolute;
     top: 0;
@@ -93,7 +93,6 @@
     padding-left: 4rem;
   }
   
-  /* Center column for the SVG timeline */
   .timeline-center {
     display: flex;
     align-items: center;
@@ -102,9 +101,52 @@
   
   .timeline-svg {
     max-height: 400px;
-    /* Ensure the SVG is centered and maintains aspect ratio */
     width: auto;
     height: 100%;
     display: block;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .timeline-title {
+      font-size: 36px;
+      margin-bottom: 2.5rem;
+    }
+  
+    .timeline-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .timeline-column {
+      position: static;
+    }
+  
+    .text-block {
+      position: static !important;
+      text-align: left;
+      padding: 0 1rem;
+    }
+  
+    .text-block h3 {
+      font-size: 28px;
+    }
+  
+    .text-block p {
+      font-size: 18px;
+    }
+  
+    .right-column .text-block {
+      padding-left: 1rem;
+    }
+  
+    .timeline-center {
+      display: none; 
+    }
+
+    .text-block{
+      padding-top: 10px;
+    }
   }
   

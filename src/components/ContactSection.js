@@ -7,7 +7,7 @@ const ContactSection = ({ sections, activeSection, onNavClick }) => {
   return (
     <section className="contact-section" id="contact">
       <div className="cta-header">
-        <h2 className="contact-title">Lets Connect there</h2>
+        <h2 className="contact-title">Let's get connected</h2>
 
         <div className="contact-cta">
           <button className="cta-button">Contact ↗</button>
@@ -16,9 +16,9 @@ const ContactSection = ({ sections, activeSection, onNavClick }) => {
 
       <div className="contact-footer">
         <div className="footer-logo">
-          <h3>Logo</h3>
+          <h3>Kudoz</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+          We create custom apps, websites, and branding to fuel your business growth. Our experts turn ideas into reality with smart design and advanced technology, helping your business thrive online.
           </p>
         </div>
 
@@ -41,20 +41,10 @@ const ContactSection = ({ sections, activeSection, onNavClick }) => {
         <div className="footer-contact">
           <h4>Contact</h4>
           <ul>
-            <li>+20 11 43 63 73 41</li>
-            <li>fawzisyed1209@gmail.com</li>
-            <li>fawziuiux.com</li>
+            <li>6369195071</li>
+            <li>pynthamizhselvi.sm23@gmail.com</li>
+            <li>Coimbatore</li>
           </ul>
-        </div>
-
-        <div className="footer-newsletter">
-          <h4>Get the latest information</h4>
-          <div className="newsletter-input">
-            <input type="email" placeholder="Email Address" />
-            <button>
-              <img src={mailSend} alt="Send Icon" />
-            </button>
-          </div>
         </div>
       </div>
     </section>

@@ -24,8 +24,8 @@
 
   .cta-header {
     display: flex;
-    align-items: center; /* vertically center the button and text */
-    justify-content: space-between; /* push them to opposite sides */
+    align-items: center;
+    justify-content: space-between;
     width: 100%; 
     padding: 4rem 0 1rem 0;
     margin-bottom: 86px;
@@ -36,8 +36,8 @@
     margin-bottom: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    line-height: 1; /* important: tighter line-height */
-    margin: 0; /* remove margin gap */
+    line-height: 1; 
+    margin: 0; 
     padding-top: 5px;
 }
   

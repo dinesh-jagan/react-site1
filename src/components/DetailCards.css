@@ -7,21 +7,22 @@
 
 .cards-container {
   margin: 0 auto;
-  padding: 20px 50px;
+  padding: 80px 50px 80px 50px;
   background-color: #F2F4F7;
   font-family: 'Poppins', sans-serif;
   border-radius: 32px 32px 0 0;
 }
 
 .detail-card {
-    background-color: #FFFFFF;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(171, 180, 194, 0.3);
-    margin: 20px 0;
-    padding: 40px;
-    display: flex;
-    align-items: flex-start;
-  }
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(171, 180, 194, 0.3);
+  margin: 20px 0 30px 0;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 13rem;
+}
 .text-col {
   flex: 1;
 }
@@ -49,7 +50,7 @@
 
 .text-col p {
   margin: 0;
-  color: #B2B9C6;
+  color: #98A2B3;
   font-size: 20px;
 }
 .text-col img {
@@ -65,14 +66,82 @@
     padding-left: 3rem;
     padding-right: 1rem;
   }
-.text-col.backend{
+  .text-col.backend {
     padding-left: 3rem;
+    padding-right: 1rem;
   }
+  
+  .text-col.testing {
+    padding-left: 12rem;
+    padding-right: 1rem;
+  }
+  
+  .text-col.design {
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+  
 
 .icons-col.frontend{
     padding-left: 3rem;
 }
 
+
 .icons-col.backend{
     padding-right: 1rem;
+}
+
+
+.icons-col.testing{
+  padding-left: 3rem;
+}
+.icons-col.design{
+  padding-left: 3rem;
+  padding-right: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+    padding: 40px 20px;
+  }
+
+  .detail-card {
+    flex-direction: column;
+    align-items: center;  
+    padding: 20px;
+    gap: 1rem;            
+  }
+
+  
+  .text-col {
+    padding: 0 !important;
+    text-align: center;
+  }
+
+  .icons-col {
+    margin: 0 0 1rem 0;
+  }
+
+
+  .icon-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+
+  .text-col h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .text-col p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  
+  .icons-col img {
+    width: 28px;
+    height: 28px;
+  }
 }

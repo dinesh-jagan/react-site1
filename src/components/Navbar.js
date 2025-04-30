@@ -18,8 +18,7 @@ const Navbar = ({ sections, activeSection, onNavClick }) => (
 
     {/* Logo Center */}
     <div className="logo">
-      <span className="logo-circle" />
-      <span className="logo-text">Logo</span>
+      <span className="logo-text">Kudoz</span>
     </div>
 
     {/* Right side links */}

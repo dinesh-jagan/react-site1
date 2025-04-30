@@ -40,16 +40,27 @@ import BKIcon15 from '../assets/icons/bkend15.svg'
 import BKIcon16 from '../assets/icons/bkend16.svg'
 
 
+//Testing Icons
+import QTIcon1 from '../assets/icons/qtIcon1.svg'
+import QTIcon2 from '../assets/icons/qtIcon2.svg'
+import QTIcon3 from '../assets/icons/qtIcon3.svg'
+import QTIcon4 from '../assets/icons/qtIcon4.svg'
+import QTIcon5 from '../assets/icons/qtIcon5.svg'
+import QTIcon6 from '../assets/icons/qtIcon6.svg'
+import QTIcon7 from '../assets/icons/qtIcon7.svg'
+
+//Design Icons
+import DNIcon1 from '../assets/icons/dnIcon1.svg'
+import DNIcon2 from '../assets/icons/dnIcon2.svg'
+import DNIcon3 from '../assets/icons/dnIcon3.svg'
+import DNIcon4 from '../assets/icons/dnIcon4.svg'
+import DNIcon5 from '../assets/icons/dnIcon5.svg'
+import DNIcon6 from '../assets/icons/dnIcon6.svg'
+import DNIcon7 from '../assets/icons/dnIcon7.svg'
 
 export default function RoleCards() {
   return (
     <div className="cards-container">
-      <div className="detail-card">
-        <div className="text-col project">
-          <h2>Project Coordination</h2>
-          <p  style={{width: 534}}>Project Coordinator skilled in organizing tasks, managing timelines, and supporting successful project execution.</p>
-        </div>
-      </div>
       <div className="detail-card">
         <div className="icons-col frontend">
           <div className="icon-row">
@@ -75,14 +86,14 @@ export default function RoleCards() {
           </div>
         </div>
         <div className="text-col frontend">
-          <h2>Frontend Developer</h2>
-          <p>Front-End Developer specializing in creating responsive, dynamic, and user-centric web applications using modern technologies.</p>
+          <h2>App Development</h2>
+          <p>App Developer specializing in developing intuitive and high-performance mobile applications for iOS and Android platforms.</p>
         </div>
       </div>
       <div className="detail-card">
       <div className="text-col backend">
-          <h2>Backend Developer</h2>
-          <p>Back-End Developer experienced in building scalable and secure server-side applications and APIs.</p>
+          <h2>Web Development</h2>
+          <p>Web Developer Specializing in creating responsive, dynamic, and user-centric websites and web applications using modern web technologies</p>
         </div>
         <div className="icons-col backend">
           <div className="icon-row">
@@ -111,15 +122,41 @@ export default function RoleCards() {
         </div>
       </div>
       <div className="detail-card">
-        <div className="text-col">
-          <h2>Quality Tester</h2>
+        <div className="icons-col testing">
+          <div className="icon-row">
+            <img src={QTIcon1} alt="Icon1" />
+            <img src={QTIcon2} alt="Icon2" />
+            <img src={QTIcon3} alt="Icon3" />
+            <img src={QTIcon4} alt="Icon4" />
+            <img src={QTIcon5} alt="Icon5" />
+          </div>
+          <div className="icon-row">
+            <img src={QTIcon6} alt="Icon6" />
+            <img src={QTIcon7} alt="Icon7" />
+          </div>
+        </div>
+        <div className="text-col testing">
+          <h2>Quality Testing</h2>
           <p>Tester experienced in quality assurance, identifying defects, and ensuring optimal software performance through rigorous testing.</p>
         </div>
       </div>
       <div className="detail-card">
-        <div className="text-col">
-          <h2>Designer</h2>
+        <div className="text-col design">
+          <h2>Designing</h2>
           <p>Designer with expertise in UI design, logo creation, branding, and poster design, focused on delivering visually impactful and user-friendly solutions.</p>
+        </div>
+        <div className="icons-col design">
+          <div className="icon-row">
+            <img src={DNIcon1} alt="Icon1" />
+            <img src={DNIcon2} alt="Icon2" />
+            <img src={DNIcon3} alt="Icon3" />
+            <img src={DNIcon4} alt="Icon4" />
+            <img src={DNIcon5} alt="Icon5" />
+          </div>
+          <div className="icon-row">
+            <img src={DNIcon6} alt="Icon6" />
+            <img src={DNIcon7} alt="Icon7" />
+          </div>
         </div>
       </div>
     </div>

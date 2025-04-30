@@ -27,7 +27,7 @@
   
   .about-btn {
     padding: 0.5rem 1.5rem;
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 500;
     border: 2px solid #000;
     border-radius: 2rem;
@@ -45,13 +45,13 @@
   
   .about-heading {
     font-family: 'Urbanist', sans-serif;
-    font-size: 95px;
+    font-size: 70px;
     font-weight: 600;
     margin: 2rem 0 !important;
   }
   
   .highlight {
-    color: #fa8c3d; /* Same orange color as the image */
+    color: #fa8c3d;
   }
   
   .about-quote {
@@ -74,7 +74,7 @@
   
   .bottom-arrow {
     position: relative;
-    left: -310px;
+    left: -287px;
     bottom: 83px;
     width: 100px;
     height: auto;
@@ -90,3 +90,50 @@
     font-weight: 500;
     size: 20px;
   }
+
+  
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-heading {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .about-btn {
+    font-size: 16px;
+    padding: 0.4rem 1rem;
+  }
+
+  .hello-arrow {
+    width: 35px;
+    top: -15px;
+    right: -20px;
+  }
+
+  .quote-icon {
+    right: 0;
+    top: 0;
+    margin: 0 auto 1rem auto;
+  }
+
+  .about-quote {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+
+  .bottom-arrow {
+    left: -136px;
+    bottom: 40px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .summary {
+    font-size: 16px;
+  }
+}

@@ -13,16 +13,13 @@ const AboutSection = () => {
       </div>
 
       <h1 className="about-heading">
-        Our <span className="highlight">Amazing</span> Team
+        Analyse. Create. <span className="highlight">Innovate</span>
       </h1>
 
       <blockquote className="about-quote" >
       <QuoteIcon className="quote-icon" />  
         <p className='summary'>
-          We are a passionate team of professionals — blending creativity,
-          technical skills, and quality assurance — to deliver outstanding
-          projects. Our team believes in collaboration, innovation, and
-          commitment to excellence.
+               We create custom apps, websites, and branding to fuel your business growth. Our experts turn ideas into reality with smart design and advanced technology, helping your business thrive online.
         </p>
       </blockquote>
 

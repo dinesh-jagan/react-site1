@@ -13,25 +13,31 @@ import arrow    from '../assets/icons/arrow-icon.svg';
 const serviceItems = [
   {
     id: 'coordination',
-    title: 'Project Coordination',
+    title: 'App Development',
     points: [
-      'Project planning, scheduling, and monitoring',
-      'Team and resource management',
-      'Agile workflow and sprint management',
-      'Client communication and reporting',
+      'Mobile app development for Android and iOS',
+      'Cross-platform apps using Flutter',
+      'API integration and mobile backend development',
+      'App deployment and maintenance',
     ],
-    Icon: projIcon,
+    Icon: webIcon,
+    bgheight: '460px',
+    cta_bottom: '116px',
+    cta_right: '87px'
   },
   {
     id: 'development',
-    title: 'Web & App Development',
+    title: 'Web Development',
     points: [
-      'Responsive Web Development (HTML, CSS, JavaScript, React, Node.js)',
-      'Mobile App Development (Flutter, Android, iOS)',
-      'API Integration and Backend Development',
+      'Responsive Web Development (HTML, CSS, JavaScript)',
+      'Frontend frameworks',
+      'Backend development',
       'CMS Integration',
     ],
     Icon: webIcon,
+    bgheight: '372px',
+    cta_bottom: '93px',
+    cta_right: '67px'
   },
   {
     id: 'testing',
@@ -43,6 +49,9 @@ const serviceItems = [
       'Quality assurance and user acceptance testing (UAT)',
     ],
     Icon: testIcon,
+    bgheight: '434px',
+    cta_bottom: '109px',
+    cta_right: '80px'
   },
   {
     id: 'design',
@@ -54,6 +63,9 @@ const serviceItems = [
       'Graphic Design for marketing materials',
     ],
     Icon: designIcon,
+    bgheight: '497px',
+    cta_bottom: '125px',
+    cta_right: '97px'
   },
 ];
 
@@ -66,15 +78,16 @@ export default function ServiceSection() {
             Our <span>Services</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc,
-            posuere in justo vulputate, bibendum sodales.
+            Powering your digital transformation with cutting-edge technology
           </p>
         </div>
 
         <div className="service-cards">
-          {serviceItems.map(({ id, title, points, Icon }) => (
+          {serviceItems.map(({ id, title, points, Icon, bgheight, cta_bottom, cta_right }) => (
             <div key={id} className="card-wrapper">
-              <div className="card">
+              <div className="card"
+              style={{ '--bg-height': bgheight, '--cta-bottom': cta_bottom, '--cta-right': cta_right }}
+              >
                 <div className="card-content">
                   <h3>{title}</h3>
                   <hr />

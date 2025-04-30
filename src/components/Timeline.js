@@ -13,12 +13,12 @@ const Timeline = () => {
         {/* Left column */}
         <div className="timeline-column left-column">
           <div className="text-block top">
-            <h3>Project Coordinator</h3>
-            <p>Coordinator with 3+ years of experience in operations and team support.</p>
+            <h3>App Developer</h3>
+            <p>With 3+ years of experience in building responsive and user-friendly web interfaces.</p>
           </div>
           <div className="text-block bottom">
-            <h3>Developer</h3>
-            <p>Developer with 3+ years of experience in building and maintaining software solutions.</p>
+            <h3>Web Developer</h3>
+            <p>With 3+ years of experience in developing scalable and secure server-side applications.</p>
           </div>
         </div>
 
