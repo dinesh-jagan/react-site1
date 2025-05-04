@@ -13,7 +13,7 @@ const AboutSection = () => {
       </div>
 
       <h1 className="about-heading">
-        Analyse. Create. <span className="highlight">Innovate</span>
+        Analyse. Create. <span className="highlight">Innovate</span> 
       </h1>
 
       <blockquote className="about-quote" >
